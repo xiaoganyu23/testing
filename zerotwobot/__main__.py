@@ -220,22 +220,20 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-               *Hᴇʟʟᴏ {} * [!]({})
-───────────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-× *Heyy There I Am Piamon*
-───────────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
-───────────────────────"""
+               Hey There {first_name}. \
+                \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
+                ───────────────────────
+                \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
+                \n× *Paimon's wish is for your wish to come true.*
+                ───────────────────────
+                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
+                ───────────────────────"""),
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(buttons)
+            )
     else:
         update.effective_message.reply_text(
-            " *Hᴇʟʟᴏ {} * [!]({})
-───────────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-× *Heyy There I Am Piamon*
-───────────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
-───────────────────────""":</b> <code>{}</code>".format(
+            "I'm running successfully on v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 BOT_VERSION,uptime,
             ),
             parse_mode=ParseMode.HTML,
