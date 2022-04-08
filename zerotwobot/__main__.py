@@ -223,12 +223,12 @@ def start(update: Update, context: CallbackContext):
                 caption=escape_markdown(f"""                
                Hey There {first_name}. \
                 \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
-                ───────────────────────
-                \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-                \n× *Paimon's wish is for your wish to come true.*
-                ───────────────────────
+                \n────────────────── \
+                \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
+                \n× *Paimon's wish is for your wish to come true.* \
+                \n────────────────── \
                 \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
-                ───────────────────────"""),
+                ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
