@@ -31,7 +31,7 @@
 
 ## Bot stuff
 
-https://heroku.com/deploy?template=https://github.com/kirito-1240/GutsX
+https://heroku.com/deploy?template=https://github.com/kirito-1240/paimon
 
 * Bot link : [Zero Two](https://t.me/joker_zero_two_bot)
 * Bot Support chat : [Support](https://t.me/blackbulls_support)
