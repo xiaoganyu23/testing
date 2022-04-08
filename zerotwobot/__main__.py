@@ -82,27 +82,19 @@ buttons = [
     [
         InlineKeyboardButton(
             "Support Group",
-            "https://t.me/blackbulls_support",
+            "https://t.me/PaimonXSupport",
         ),
         InlineKeyboardButton(
             "Announcemnets",
-            "https://t.me/blackbull_bots"
+            "https://t.me/PaimonXUpdates"
         ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Source Code",
-            url="https://github.com/Black-Bulls-Bots/zerotwobot"
-        )
     ]
-]
-
 
 
 
 HELP_STRINGS = """
 Hey there!.
-My Name is {}, from Darling in The FranXX. Take me as your group's darling to have fun with me. \
+My Name is {}, from Genshin Impact. Take me as your group's  to have fun with me. \
 I can help you with the following commands.
 
 *Main* commands available:
@@ -120,12 +112,12 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/5b9bc54b0ae753bb1ec18.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/f6e611d602217b6ff3486.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @joker_hacker_6521 \
+ You can support the project by contacting @X_Alonez \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @jokers_botsupport."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at @PaimonXSupport."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -228,21 +220,22 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-                Hey There {first_name}. \
-                \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
-                \nType /help to get available commands. \
-
-                \nVersion info: \
-                \nI'm running on v{BOT_VERSION} \
-                \nPython: {PYTHON_VERSION} \
-                \nPTB: {PTB_VERSION} \
-                \nBOT_API: {BOT_API_VERSION}"""),
-                parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(buttons)
-            )
+               *Hᴇʟʟᴏ {} * [!]({})
+───────────────────────
+× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
+× *Heyy There I Am Piamon*
+───────────────────────
+× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
+───────────────────────"""
     else:
         update.effective_message.reply_text(
-            "I'm running successfully on v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            " *Hᴇʟʟᴏ {} * [!]({})
+───────────────────────
+× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
+× *Heyy There I Am Piamon*
+───────────────────────
+× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
+───────────────────────""":</b> <code>{}</code>".format(
                 BOT_VERSION,uptime,
             ),
             parse_mode=ParseMode.HTML,
@@ -251,11 +244,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Support",
-                            url="https://t.me/blackbulls_support",
+                            url="https://t.me/PaimonXSupport",
                         ),
                         InlineKeyboardButton(
                             text=str("Announcement's"),
-                            url="https://t.me/blackbull_bots",
+                            url="https://t.me/PaimonXUpdates",
                         ),
                     ],
                 ],
@@ -443,7 +436,7 @@ def send_settings(chat_id, user_id, user=False):
             chat_name = dispatcher.bot.getChat(chat_id).title
             dispatcher.bot.send_message(
                 user_id,
-                text="Which module would you like to check {}'s settings for Darling?".format(
+                text="Which module would you like to check {}'s settings ?".format(
                     chat_name,
                 ),
                 reply_markup=InlineKeyboardMarkup(
@@ -633,7 +626,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hey developer's I'm Now online")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Paimon is active and will do her very best to be a great guide!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
