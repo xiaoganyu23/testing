@@ -75,19 +75,16 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group",
+            text="Add Me To Your Group",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=True",
         ),
     ],
     [
         InlineKeyboardButton(
             "Support Group",
-            "https://t.me/PaimonXSupport",
+            "https://t.me/naruto_robot_support",
         ),
-        InlineKeyboardButton(
-            "Announcemnets",
-            "https://t.me/PaimonXUpdates"
-        ),
+        
     ]
 ] 
 
@@ -113,7 +110,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/f6e611d602217b6ff3486.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/b01868d0bdf6879d9e596.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @X_Alonez \
@@ -225,7 +222,7 @@ def start(update: Update, context: CallbackContext):
                 \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
                 \n────────────────── \
                 \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *Paimon's wish is for your wish to come true.* \
+                \n× *Naruto's wish is for your wish to come true.* \
                 \n────────────────── \
                 \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
                 ──────────────────"""),
@@ -243,12 +240,9 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Support",
-                            url="https://t.me/PaimonXSupport",
+                            url="https://t.me/naruto_robot_support",
                         ),
-                        InlineKeyboardButton(
-                            text=str("Announcement's"),
-                            url="https://t.me/PaimonXUpdates",
-                        ),
+
                     ],
                 ],
             ),
