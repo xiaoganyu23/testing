@@ -75,13 +75,14 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Me To Your Group",
+            text="【Add Me To Your Group】",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=True",
         ),
     ],
     [
+        InlineKeyboardButton(text="【Help】" , callback_data="help_back"),
         InlineKeyboardButton(
-            "Support Group",
+            "【Support Group】",
             "https://t.me/naruto_robot_support",
         ),
         
@@ -224,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                 \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
                 \n× *Naruto's wish is for your wish to come true.* \
                 \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tempest!*
+                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Rin Okumura!*
                 ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
@@ -239,7 +240,7 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support",
+                            text="【Support】",
                             url="https://t.me/naruto_robot_support",
                         ),
 
