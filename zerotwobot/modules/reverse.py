@@ -72,10 +72,7 @@ def reverse(update: Update, context: CallbackContext):
         return
     else:
         message.reply_text("Command should be used with replying to an image or url should given.")
-
-REVERSE_HANDLER = DisableAbleCommandHandler("reverse", reverse, run_async=True)
-dispatcher.add_handler(REVERSE_HANDLER)
-
+REVERSE_HANDLER = DisableAbleCommandHandler( ["reverse", "pp", "r"], reverse, run_async=True)
 __help__ = """
 Reverse search any image using google image search.
 
