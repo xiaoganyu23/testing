@@ -309,6 +309,9 @@ def info(update: Update, context: CallbackContext):
 
         text += "\n\nThis user is a 'Chunin'."
         disaster_level_present = True
+    elif user.id in 亗ᏆᏀΝᏆͲᎬ:
+        text += "\n\n\This user is a member of '亗ᏆᏀΝᏆͲᎬ'."
+        disaster_level_present = True
     elif user.id in TIGERS:
         text += "\n\nThe Disaster level of this person is 'Tiger'."
         disaster_level_present = True
