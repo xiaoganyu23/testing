@@ -522,6 +522,25 @@ def sudolist(update: Update, context: CallbackContext):
 
 
 @whitelist_plus
+def memberlist(update: Update, context: CallbackContext):
+    bot = context.bot
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel..</code>",
+        parse_mode=ParseMode.HTML,
+    )
+    reply = "<b>Member of 亗ᏆᏀΝᏆͲᎬ:</b>\n"
+    for each_user in DEMONS:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
+
+
+
+@whitelist_plus
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
@@ -547,6 +566,7 @@ Group admins/group owners do not need these commands.
  ╔ *List all special users:*
  ╠ `/dragons`*:* Lists all Dragon disasters
  ╠ `/demons`*:* Lists all Demon disasters
+ ╠ `/members`*:* Lists all Ignite disasters
  ╠ `/tigers`*:* Lists all Tigers disasters
  ╠ `/wolves`*:* Lists all Wolf disasters
  ╠ `/heroes`*:* Lists all Zero Two Association members
@@ -632,6 +652,7 @@ Visit @blackbulls\_support for more information.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo, run_async=True)
+IGNITE_HANDLER = CommandHandler(("addmember", "addignite"), addmember, run_async=True) 
 SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport, run_async=True)
 TIGER_HANDLER = CommandHandler(("addtiger"), addtiger, run_async=True)
 WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist, run_async=True)
@@ -641,6 +662,7 @@ UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger, run_async=True)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist, run_async=True)
 
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist, run_async=True)
+IGNITE_HANDLER = CommandHandler(["memberlist", "ignite"], memeberlist, run_async=True) 
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist, run_async=True)
 SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist, run_async=True)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist, run_async=True)
@@ -656,6 +678,7 @@ dispatcher.add_handler(UNTIGER_HANDLER)
 dispatcher.add_handler(UNWHITELIST_HANDLER)
 
 dispatcher.add_handler(WHITELISTLIST_HANDLER)
+dispatcher.add_handler(IGNITE_HANDLER) 
 dispatcher.add_handler(TIGERLIST_HANDLER)
 dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
@@ -667,6 +690,7 @@ __handlers__ = [
     SUPPORT_HANDLER,
     TIGER_HANDLER,
     WHITELIST_HANDLER,
+    IGNITE_HANDLER,
     UNSUDO_HANDLER,
     UNSUPPORT_HANDLER,
     UNTIGER_HANDLER,
