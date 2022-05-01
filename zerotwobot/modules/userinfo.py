@@ -286,25 +286,25 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]."
+        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
         text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
 
         text += "\n\nThis user is a 'Hokage'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]."
+        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
         text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
 
         text += "\n\nThis user is a 'Sannin'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]."
+        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
         text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
 
         text += "\n\nThis user is a 'Jonin'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]."
+        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
         text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
 
         text += "\n\nThis user is a 'Chunin'."
@@ -318,7 +318,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/jokers_botupdates/7">?</a>]'.format(
+        text += ' [<a href="https://t.me/narutox_updates/3">?</a>]'.format(
             bot.username,
         )
 
