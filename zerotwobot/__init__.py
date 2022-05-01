@@ -68,6 +68,11 @@ if ENV:
         TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
+        
+    try:
+        MEMBERS = set(int(x) for x in os.environ.get("MEMBERS", "").split())
+    except ValueError:
+        raise Exception("Your member users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get("INFOPIC", False))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
@@ -140,6 +145,11 @@ else:
         TIGERS = set(int(x) for x in Config.TIGERS or [])
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
+        
+    try:
+        MEMBERS = set(int(x) for x in Config.MEMBERS or [])
+    except ValueError:
+        raise Exception("Your member users list does not contain valid integers.")
 
     EVENT_LOGS = Config.EVENT_LOGS
     WEBHOOK = Config.WEBHOOK
@@ -195,6 +205,7 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
+MEMBERS = list(MEMBERS)
 
 # Load at end to ensure all prev variables have been set
 from zerotwobot.modules.helper_funcs.handlers import (
