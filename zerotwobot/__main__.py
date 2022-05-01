@@ -83,11 +83,11 @@ buttons = [
         InlineKeyboardButton(text="【Help】" , callback_data="help_back"),
         InlineKeyboardButton(
             "【Support Group】",
-            "https://t.me/naruto_robot_support",
+            "https://t.me/naruto_robot_support"),
         InlineKeyboardButton(
             "【Network】",
-            "https://t.me/xignite_network",
-        ),
+            "https://t.me/xignite_network"),
+
         
     ]
 ] 
