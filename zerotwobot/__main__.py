@@ -84,6 +84,9 @@ buttons = [
         InlineKeyboardButton(
             "【Support Group】",
             "https://t.me/naruto_robot_support",
+        InlineKeyboardButton(
+            "【Network】",
+            "https://t.me/ignite_xnetwork",
         ),
         
     ]
@@ -111,7 +114,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/b01868d0bdf6879d9e596.mp4"
+ZEROTWO_IMG = "https://telegra.ph/file/b2c1b4f8c0d27e5b8eb00.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @X_Alonez \
@@ -620,7 +623,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@naruto_robot_support", "👋 Hi, i'm alive.")
+            dispatcher.bot.sendMessage(f"@naruto_robot_support", "👋 Yo, i'm alive.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
