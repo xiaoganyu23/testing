@@ -19,6 +19,7 @@ from zerotwobot import (
     DEMONS,
     TIGERS,
     WOLVES,
+    MEMBERS,
     INFOPIC,
     dispatcher,
     sw,
@@ -313,8 +314,14 @@ def info(update: Update, context: CallbackContext):
     elif user.id in TIGERS:
         text += "\n\nThe Disaster level of this person is 'Tiger'."
         disaster_level_present = True
+    
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
+        disaster_level_present = True
+    
+    elif user.id in MEMBERS:
+        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
+        text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
         disaster_level_present = True
 
     if disaster_level_present:
