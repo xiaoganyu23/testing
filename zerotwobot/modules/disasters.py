@@ -774,10 +774,13 @@ UNSUDO_HANDLER = CommandHandler(("removesudo", "removedragon"), removesudo, run_
 UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport, run_async=True)
 UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger, run_async=True)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist, run_async=True)
-
+MEMBERLIST_HANDLER = CommandHandler(("addmember"), addmember, run_async=True)
+UNMEMBERLIST_HANDLER = CommandHandler(("removemember"), removewhitelist, run_async=True)
+                                   
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist, run_async=True) 
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist, run_async=True)
 SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist, run_async=True)
+MEMBERLIST_HANDLER = CommandHandler(["members"], supportlist, run_async=True)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist, run_async=True)
 DEVLIST_HANDLER = CommandHandler(["devlist", "heroes"], devlist, run_async=True)
 
@@ -789,6 +792,9 @@ dispatcher.add_handler(UNSUDO_HANDLER)
 dispatcher.add_handler(UNSUPPORT_HANDLER)
 dispatcher.add_handler(UNTIGER_HANDLER)
 dispatcher.add_handler(UNWHITELIST_HANDLER)
+dispatcher.add_handler(MEMBERLIST_HANDLER)
+dispatcher.add_handler(MEMBER_HANDLER)
+dispatcher.add_handler(UNMEMBER_HANDLER)
 
 dispatcher.add_handler(WHITELISTLIST_HANDLER)
  
@@ -803,14 +809,17 @@ __handlers__ = [
     SUPPORT_HANDLER,
     TIGER_HANDLER,
     WHITELIST_HANDLER,
+    MEMBER_HANDLER,
 
     UNSUDO_HANDLER,
     UNSUPPORT_HANDLER,
     UNTIGER_HANDLER,
     UNWHITELIST_HANDLER,
+    UNMEMBER_HANDLER,
     WHITELISTLIST_HANDLER,
     TIGERLIST_HANDLER,
     SUPPORTLIST_HANDLER,
     SUDOLIST_HANDLER,
     DEVLIST_HANDLER,
+    MEMBERLIST_HANDLER,
 ]
