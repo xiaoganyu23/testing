@@ -451,7 +451,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 def whitelistlist(update: Update, context: CallbackContext):
     reply = "<b>Known Wolf Disasters 🐺:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in WOLVES:
@@ -470,7 +470,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 def tigerlist(update: Update, context: CallbackContext):
     reply = "<b>Known Tiger Disasters 🐯:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in TIGERS:
@@ -488,7 +488,7 @@ def tigerlist(update: Update, context: CallbackContext):
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
     )
     reply = "<b>Known Demon Disasters 👹:</b>\n"
     for each_user in DEMONS:
@@ -506,7 +506,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
     reply = "<b>Known Dragon Disasters 🐉:</b>\n"
@@ -521,30 +521,13 @@ def sudolist(update: Update, context: CallbackContext):
 
 
 
-@whitelist_plus
-def memberlist(update: Update, context: CallbackContext):
-    bot = context.bot
-    m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>",
-        parse_mode=ParseMode.HTML,
-    )
-    reply = "<b>Member of 亗ᏆᏀΝᏆͲᎬ:</b>\n"
-    for each_user in DEMONS:
-        user_id = int(each_user)
-        try:
-            user = bot.get_chat(user_id)
-            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
-        except TelegramError:
-            pass
-    m.edit_text(reply, parse_mode=ParseMode.HTML)
-
 
 
 @whitelist_plus
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML,
+        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
     reply = "<b>Zero Two Association Members ⚡️:</b>\n"
@@ -652,7 +635,7 @@ Visit @blackbulls\_support for more information.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo, run_async=True)
-IGNITE_HANDLER = CommandHandler(("addmember", "addignite"), addmember, run_async=True) 
+
 SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport, run_async=True)
 TIGER_HANDLER = CommandHandler(("addtiger"), addtiger, run_async=True)
 WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist, run_async=True)
@@ -661,8 +644,7 @@ UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesuppo
 UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger, run_async=True)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist, run_async=True)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist, run_async=True)
-IGNITE_HANDLER = CommandHandler(["memberlist", "ignite"], memeberlist, run_async=True) 
+WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist, run_async=True) 
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist, run_async=True)
 SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist, run_async=True)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist, run_async=True)
@@ -678,7 +660,7 @@ dispatcher.add_handler(UNTIGER_HANDLER)
 dispatcher.add_handler(UNWHITELIST_HANDLER)
 
 dispatcher.add_handler(WHITELISTLIST_HANDLER)
-dispatcher.add_handler(IGNITE_HANDLER) 
+ 
 dispatcher.add_handler(TIGERLIST_HANDLER)
 dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
@@ -690,7 +672,7 @@ __handlers__ = [
     SUPPORT_HANDLER,
     TIGER_HANDLER,
     WHITELIST_HANDLER,
-    IGNITE_HANDLER,
+
     UNSUDO_HANDLER,
     UNSUPPORT_HANDLER,
     UNTIGER_HANDLER,
