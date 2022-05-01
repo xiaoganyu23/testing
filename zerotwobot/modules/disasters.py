@@ -277,6 +277,72 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
 
 
+@sudo_plus
+@gloggable
+def addmember(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+    rt = ""
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in DRAGONS:
+        rt += "This member is a Dragon Disaster, Demoting to MEMBER."
+        data["sudos"].remove(user_id)
+        DRAGONS.remove(user_id)
+
+    if user_id in DEMONS:
+        rt += "This user is already a Demon Disaster, Demoting to MEMBER."
+        data["supports"].remove(user_id)
+        DEMONS.remove(user_id)
+
+    if user_id in WOLVES:
+        rt += "This user is already a Wolf Disaster, Demoting to MEMBER."
+        data["whitelists"].remove(user_id)
+        WOLVES.remove(user_id)
+    
+    if user_id in TIGERS:
+        rt += "This user is already a Tiger Disaster, Demoting to MEMBER."
+        data["tigers"].remove(user_id)
+        Tigers.remove(user_id)
+        
+    if user_id in MEMBERS:
+        message.reply_text("This user is already a MEMBER.")
+        return ""
+
+    data["members"].append(user_id)
+    MEMBERS.append(user_id)
+
+    with open(ELEVATED_USERS_FILE, "w") as outfile:
+        json.dump(data, outfile, indent=4)
+
+    update.effective_message.reply_text(
+        rt + f"\nSuccessfully promoted {user_member.first_name} to a MEMBER!",
+    )
+
+    log_message = (
+        f"#MEMBER\n"
+        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
+        f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+    )
+
+    if chat.type != "private":
+        log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+    return log_message
+
+
+
 @dev_plus
 @gloggable
 def removesudo(update: Update, context: CallbackContext) -> str:
@@ -447,6 +513,49 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
 
 
+@sudo_plus
+@gloggable
+def removemember(update: Update, context: CallbackContext) -> str:
+    message = update.effective_message
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    user_id = extract_user(message, args)
+    user_member = bot.getChat(user_id)
+
+    reply = check_user_id(user_id, bot)
+    if reply:
+        message.reply_text(reply)
+        return ""
+
+    with open(ELEVATED_USERS_FILE, "r") as infile:
+        data = json.load(infile)
+
+    if user_id in MEMBERS:
+        message.reply_text("Demoting to normal user")
+        MEMBER.remove(user_id)
+        data["member"].remove(user_id)
+
+        with open(ELEVATED_USERS_FILE, "w") as outfile:
+            json.dump(data, outfile, indent=4)
+
+        log_message = (
+            f"#UNMEMBER\n"
+            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
+        )
+
+        if chat.type != "private":
+            log_message = f"<b>{html.escape(chat.title)}:</b>\n" + log_message
+
+        return log_message
+    else:
+        message.reply_text("This user is not a MEMBER!")
+        return ""    
+    
+    
+
+    
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
     reply = "<b>Known Wolf Disasters 🐺:</b>\n"
@@ -540,6 +649,27 @@ def devlist(update: Update, context: CallbackContext):
             pass
     m.edit_text(reply, parse_mode=ParseMode.HTML)
 
+    
+    
+    
+    
+@whitelist_plus   
+def memberlist(update: Update, context: CallbackContext):
+    reply = "<b>Known Members :</b>\n"
+    m = update.effective_message.reply_text(
+        "<code>Gathering intel from 亗ᏆᏀΝᏆͲᎬ..</code>", parse_mode=ParseMode.HTML,
+    )
+    bot = context.bot
+    for each_user in MEMBERS:
+        user_id = int(each_user)
+        try:
+            user = bot.get_chat(user_id)
+
+            reply += f"• {mention_html(user_id, html.escape(user.first_name))}\n"
+        except TelegramError:
+            pass
+    m.edit_text(reply, parse_mode=ParseMode.HTML)
+    
 
 __help__ = f"""
 *⚠️ Notice:*
