@@ -86,7 +86,7 @@ buttons = [
             "https://t.me/naruto_robot_support",
         InlineKeyboardButton(
             "【Network】",
-            "https://t.me/ignite_xnetwork",
+            "https://t.me/xignite_network",
         ),
         
     ]
@@ -96,7 +96,7 @@ buttons = [
 
 HELP_STRINGS = """
 Hey there!.
-My Name is {}, from Genshin Impact. Take me as your group's  to have fun with me. \
+My Name is {}, from Naruto. Take me as your group's  to have fun with me. \
 I can help you with the following commands.
 
 *Main* commands available:
@@ -228,7 +228,7 @@ def start(update: Update, context: CallbackContext):
                 \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
                 \n× *Naruto's wish is for your wish to come true.* \
                 \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: Rin Okumura!*
+                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: 亗𝙸𝙶𝙽𝙸𝚃𝙴!*
                 ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
