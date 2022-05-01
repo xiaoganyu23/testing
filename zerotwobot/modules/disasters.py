@@ -11,6 +11,7 @@ from zerotwobot import (
     DEMONS,
     TIGERS,
     WOLVES,
+    MEMBERS,
     dispatcher,
 )
 from zerotwobot.modules.helper_funcs.chat_status import (
