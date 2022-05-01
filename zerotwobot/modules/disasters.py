@@ -774,13 +774,13 @@ UNSUDO_HANDLER = CommandHandler(("removesudo", "removedragon"), removesudo, run_
 UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport, run_async=True)
 UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger, run_async=True)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist, run_async=True)
-MEMBERLIST_HANDLER = CommandHandler(("addmember"), addmember, run_async=True)
-UNMEMBERLIST_HANDLER = CommandHandler(("removemember"), removewhitelist, run_async=True)
+MEMBER_HANDLER = CommandHandler(("addmember"), addmember, run_async=True)
+UNMEMBER_HANDLER = CommandHandler(("removemember"), removemember, run_async=True)
                                    
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist, run_async=True) 
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist, run_async=True)
 SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist, run_async=True)
-MEMBERLIST_HANDLER = CommandHandler(["members"], supportlist, run_async=True)
+MEMBERLIST_HANDLER = CommandHandler(["members"], memberlist, run_async=True)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist, run_async=True)
 DEVLIST_HANDLER = CommandHandler(["devlist", "heroes"], devlist, run_async=True)
 
