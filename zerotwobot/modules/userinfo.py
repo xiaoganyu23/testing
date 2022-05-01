@@ -237,7 +237,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Gathering info from 亗ᏆᏀΝᏆͲᎬ...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
@@ -309,9 +309,7 @@ def info(update: Update, context: CallbackContext):
 
         text += "\n\nThis user is a 'Chunin'."
         disaster_level_present = True
-    elif user.id in 亗ᏆᏀΝᏆͲᎬ:
-        text += "\n\n\This user is a member of '亗ᏆᏀΝᏆͲᎬ'."
-        disaster_level_present = True
+
     elif user.id in TIGERS:
         text += "\n\nThe Disaster level of this person is 'Tiger'."
         disaster_level_present = True
