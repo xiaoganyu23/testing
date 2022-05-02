@@ -80,7 +80,6 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝙷𝙴𝙻𝙿 🩹" , callback_data="help_back"),
         InlineKeyboardButton(
             "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
             "https://t.me/naruto_robot_support"),
@@ -114,7 +113,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/b2c1b4f8c0d27e5b8eb00.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/cce63b5667d1028cd4fd9.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @X_Alonez \
@@ -227,6 +226,7 @@ def start(update: Update, context: CallbackContext):
                 \n────────────────── \
                 \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
                 \n× *Naruto's wish is for your wish to come true.* \
+                \n× *Hit /help to see my available commands.* \
                 \n────────────────── \
                 \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: 亗𝙸𝙶𝙽𝙸𝚃𝙴!*
                 ──────────────────"""),
