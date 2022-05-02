@@ -321,7 +321,7 @@ def addmember(update: Update, context: CallbackContext) -> str:
         message.reply_text("This user is already a MEMBER.")
         return ""
 
-    data["member"].append(user_id)
+    data["members"].append(user_id)
     MEMBERS.append(user_id)
 
     with open(ELEVATED_USERS_FILE, "w") as outfile:
@@ -535,7 +535,7 @@ def removemember(update: Update, context: CallbackContext) -> str:
     if user_id in MEMBERS:
         message.reply_text("Demoting to normal user")
         MEMBER.remove(user_id)
-        data["member"].remove(user_id)
+        data["members"].remove(user_id)
 
         with open(ELEVATED_USERS_FILE, "w") as outfile:
             json.dump(data, outfile, indent=4)
