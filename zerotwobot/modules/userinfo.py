@@ -324,8 +324,6 @@ def info(update: Update, context: CallbackContext):
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
         disaster_level_present = True
 
-    
-        )
 
     try:
         user_member = chat.get_member(user.id)
