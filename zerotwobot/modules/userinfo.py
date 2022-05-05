@@ -323,6 +323,12 @@ def info(update: Update, context: CallbackContext):
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
         disaster_level_present = True
+    elif user.id == 1829047705:
+        text += (
+            "\n\nOwner Of A Bot. King Of @naruto_xRobot. Bot Name Inspired From 'Naruto'."
+        )
+        disaster_level_present = True
+
 
 
     try:
