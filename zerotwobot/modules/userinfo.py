@@ -360,21 +360,7 @@ def info(update: Update, context: CallbackContext):
                 chat.id,
                 photo=profile,
                 caption=(text), 
-
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                "【Health】", url="https://t.me/narutox_updates/3"
-                            ),
-                            InlineKeyboardButton(
-                                "【Disaster】", url="https://t.me/narutox_updates/4"
-                            ),
-                        ],
-                    ]
-                ),
-
-            
+            (
                 parse_mode=ParseMode.HTML,
             )
 
