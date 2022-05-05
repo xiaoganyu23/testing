@@ -359,9 +359,20 @@ def info(update: Update, context: CallbackContext):
                 photo=profile,
                 caption=(text), 
 
-            message.reply_photo(
-                photo=open(f"{user.id}.png", "rb"),
-                caption=(text),
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                "【Health】", url="https://t.me/narutox_updates/3"
+                            ),
+                            InlineKeyboardButton(
+                                "【Disaster】", url="https://t.me/narutox_updates/4"
+                            ),
+                        ],
+                    ]
+                ),
+
+            
                 parse_mode=ParseMode.HTML,
             )
 
