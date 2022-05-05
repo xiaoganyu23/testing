@@ -242,20 +242,20 @@ def info(update: Update, context: CallbackContext):
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
-        f"ID: <code>{user.id}</code>\n"
-        f"First Name: {html.escape(user.first_name)}"
+        f" ◐ 𝙸𝙳 | <code>{user.id}</code>\n"
+        f" ◐ 𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴 | {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\nLast Name: {html.escape(user.last_name)}"
+        text += f"\n◑ 𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴 | {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\nUsername: @{html.escape(user.username)}"
+        text += f"\n◐ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 | @{html.escape(user.username)}"
 
-    text += f"\nPermalink: {mention_html(user.id, 'link')}"
+    text += f"\n◑ 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙻𝙸𝙽𝙺 | {mention_html(user.id, '🖇️𝙷𝙴𝚁𝙴')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\nPresence: <code>{}</code>"
+        _stext = "\n ◐ 𝙿𝙾𝚂𝙸𝚃𝙸𝙾𝙽 | <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -263,12 +263,12 @@ def info(update: Update, context: CallbackContext):
         else:
             status = status = bot.get_chat_member(chat.id, user.id).status
             if status:
-                if status in {"left", "kicked"}:
+                if status in {"𝙻𝙴𝙵𝚃", "𝙺𝙸𝙲𝙺𝙴𝙳"}:
                     text += _stext.format("Not here")
-                elif status == "member":
-                    text += _stext.format("Detected")
-                elif status in {"administrator", "creator"}:
-                    text += _stext.format("Admin")
+                elif status == "𝙼𝙴𝙼𝙱𝙴𝚁":
+                    text += _stext.format("𝙳𝙴𝚃𝙴𝙲𝚃𝙴𝙳")
+                elif status in {"𝙰𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙾𝚁", "𝙲𝚁𝙴𝙰𝚃𝙾𝚁"}:
+                    text += _stext.format("𝙰𝙳𝙼𝙸𝙽")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
@@ -278,7 +278,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\nAppeal at @naruto_robot_support"
         else:
             pass
     except:
@@ -320,13 +320,11 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
     
     elif user.id in MEMBERS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
-        text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
         disaster_level_present = True
 
-    if disaster_level_present:
-        text += ' [<a href="https://t.me/narutox_updates/4">?</a>]'.format(
-            bot.username,
+    
         )
 
     try:
