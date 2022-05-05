@@ -287,28 +287,28 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
-        text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\nThis user is a 'Hokage'."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚃𝙷𝙴 𝙷𝙾𝙺𝙰𝙶𝙴 🚩."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
-        text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\nThis user is a 'Sannin'."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚂𝙰𝙽𝙽𝙸𝙽  🚩."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
-        text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\nThis user is a 'Jonin'."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙹𝙾𝙽𝙸𝙽  🚩."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n[ 𝙿𝙾𝚆𝙴𝚁𝚂 ]"
-        text += "\n\nThis user is a member of '亗ᏆᏀΝᏆͲᎬ'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\nThis user is a 'Chunin'."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙲𝙷𝚄𝙽𝙸𝙽  🚩."
         disaster_level_present = True
 
     elif user.id in TIGERS:
