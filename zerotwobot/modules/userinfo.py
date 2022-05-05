@@ -360,7 +360,7 @@ def info(update: Update, context: CallbackContext):
                 chat.id,
                 photo=profile,
                 caption=(text), 
-            (
+            
                 parse_mode=ParseMode.HTML,
             )
 
