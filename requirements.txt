@@ -95,3 +95,4 @@ webencodings==0.5.1
 wikipedia==1.4.0
 yarl==1.7.2
 zalgo-text==0.6
+python-arq
