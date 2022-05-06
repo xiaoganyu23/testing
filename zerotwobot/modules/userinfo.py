@@ -330,8 +330,6 @@ def info(update: Update, context: CallbackContext):
             bot.username,
 
         )
-        disaster_level_present = True
-
 
 
     try:
