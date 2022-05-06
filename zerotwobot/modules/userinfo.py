@@ -323,9 +323,9 @@ def info(update: Update, context: CallbackContext):
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
         disaster_level_present = True
-    elif user.id == 1829047705:
-        text += (
-            if disaster_level_present:
+        
+
+    if disaster_level_present:
         text += ' [<a href="https://t.me/jokers_botupdates/7">?</a>]'.format(
             bot.username,
 
