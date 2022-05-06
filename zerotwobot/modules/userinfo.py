@@ -361,6 +361,18 @@ def info(update: Update, context: CallbackContext):
                 chat.id,
                 photo=profile,
                 caption=(text), 
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                "𝙷𝙴𝙰𝙻𝚃𝙷", url="https://t.me/narutox_updates/3"
+                            ),
+                            InlineKeyboardButton(
+                                "𝙳𝙸𝚂𝙰𝚂𝚃𝙴𝚁𝚂", url="https://t.me/narutox_updates/4"
+                            ),
+                        ],
+                    ]
+                ),
             
                 parse_mode=ParseMode.HTML,
             )
