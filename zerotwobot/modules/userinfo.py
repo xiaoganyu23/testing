@@ -275,6 +275,8 @@ def info(update: Update, context: CallbackContext):
         text += ' [<a href="https://t.me/narutox_updates/3">‼️</a>]'.format(
             bot.username,
 
+         ) 
+
     try:
         spamwtc = sw.get_ban(int(user.id))
         if spamwtc:
