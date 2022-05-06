@@ -325,7 +325,10 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
     elif user.id == 1829047705:
         text += (
-            "\n\nOwner Of A Bot. King Of @naruto_xRobot. Bot Name Inspired From 'Naruto'."
+            if disaster_level_present:
+        text += ' [<a href="https://t.me/jokers_botupdates/7">?</a>]'.format(
+            bot.username,
+
         )
         disaster_level_present = True
 
