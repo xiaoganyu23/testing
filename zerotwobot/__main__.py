@@ -85,7 +85,7 @@ buttons = [
             "https://t.me/naruto_robot_support"),
         InlineKeyboardButton(
             "𝙽𝙴𝚃𝚆𝙾𝚁𝙺 📡",
-            "https://t.me/xignite_network"),
+            "https://t.me/ignite_Xnetwork"),
 
         
     ]
