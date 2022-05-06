@@ -6,7 +6,10 @@ import time
 import spamwatch
 
 import telegram.ext as tg
+from aiohttp import ClientSession
+
 from Python_ARQ import ARQ
+
 from telegram import __version__ as ptb_version
 from telegram import bot_api_version
 from telethon import TelegramClient
