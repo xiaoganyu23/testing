@@ -6,10 +6,6 @@ import time
 import spamwatch
 
 import telegram.ext as tg
-from aiohttp import ClientSession
-
-from Python_ARQ import ARQ
-
 from telegram import __version__ as ptb_version
 from telegram import bot_api_version
 from telethon import TelegramClient
@@ -101,9 +97,6 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
-    ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
-
-    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     DB_URI = os.environ.get("DATABASE_URL")
@@ -167,9 +160,6 @@ else:
     API_HASH = Config.API_HASH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
-    ARQ_API_KEY = Config.ARQ_API_KEY
-
-    ARQ_API_URL = Config.ARQ_API_URL
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
@@ -209,40 +199,6 @@ else:
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("zero-two", API_ID, API_HASH)
 dispatcher = updater.dispatcher
-
-print("[INFO]: INITIALIZING AIOHTTP SESSION")
-aiohttpsession = ClientSession()
-# ARQ Client
-print("[INFO]: INITIALIZING ARQ CLIENT")
-arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-
-ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-try:
-    ubot2.start()
-except BaseException:
-    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
-    sys.exit(1)
-
-pbot = Client(
-
-    ":memory:",
-
-    api_id=API_ID,
-
-    api_hash=API_HASH,
-
-    bot_token=TOKEN,
-
-    workers=min(32, os.cpu_count() + 4),
-
-)
-
-apps = []
-
-apps.append(pbot)
-
-loop = asyncio.get_event_loop()
-
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
