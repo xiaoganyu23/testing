@@ -10,6 +10,7 @@ from telegram import __version__ as ptb_version
 from telegram import bot_api_version
 from telethon import TelegramClient
 from dotenv import load_dotenv
+from Python_ARQ import ARQ
 
 load_dotenv()
 
@@ -97,6 +98,8 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
+    ARQ_API_URL = "https://arq.hamker.in"
+    ARQ_API_KEY = "ZEYTAH-MROSWY-HRJHRJ-ZZYCAG-ARQ"
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     DB_URI = os.environ.get("DATABASE_URL")
@@ -177,6 +180,7 @@ else:
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
     TEMP_DOWNLOAD_LOC = Config.TEMP_DOWNLOAD_LOC
+    ARQ_API_KEY = Config.ARQ_API_KEY
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
