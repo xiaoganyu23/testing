@@ -13,6 +13,10 @@ from Python_ARQ import ARQ
 from telegram import __version__ as ptb_version
 from telegram import bot_api_version
 from telethon import TelegramClient
+from telethon.sessions import StringSession
+from telethon.sessions import MemorySession
+from pyrogram.types import Message
+from pyrogram import Client, errors
 from dotenv import load_dotenv
 
 load_dotenv()
