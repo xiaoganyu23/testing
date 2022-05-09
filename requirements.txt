@@ -97,4 +97,3 @@ yarl==1.7.2
 zalgo-text==0.6
 python-arq
 fontTools
-nekos.py
