@@ -82,10 +82,10 @@ buttons = [
     [
         InlineKeyboardButton(
             "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
-            "https://t.me/naruto_robot_support"),
+            "https://t.me/BOTPEROSUPPORT"),
         InlineKeyboardButton(
-            "𝙽𝙴𝚃𝚆𝙾𝚁𝙺 📡",
-            "https://t.me/ignite_Xnetwork"),
+            "OWNER",
+            "https://t.me/SILVER_KING"),
 
         
     ]
@@ -95,7 +95,7 @@ buttons = [
 
 HELP_STRINGS = """
 Hey there!.
-My Name is {}, from Naruto. Take me as your group's  to have fun with me. \
+My Name is {}. Take me as your group's  to have fun with me. \
 I can help you with the following commands.
 
 *Main* commands available:
@@ -113,7 +113,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/cce63b5667d1028cd4fd9.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/38513d13b5f772f2a36bd.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @X_Alonez \
@@ -225,10 +225,10 @@ def start(update: Update, context: CallbackContext):
                 \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
                 \n────────────────── \
                 \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *Naruto's wish is for your wish to come true.* \
+                \n× *I WILL DO MY BEST.* \
                 \n× *Hit /help to see my available commands.* \
                 \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: 亗𝙸𝙶𝙽𝙸𝚃𝙴!*
+                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: SILVER_KING!*
                 ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="【Support】",
-                            url="https://t.me/naruto_robot_support",
+                            url="https://t.me/BOTPEROSUPPORT",
                         ),
 
                     ],
@@ -623,7 +623,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@naruto_robot_support", "👋 Yo, i'm alive.")
+            dispatcher.bot.sendMessage(f"@BOTPEROSUPPORT", "👋 Yo, i'm alive.")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
