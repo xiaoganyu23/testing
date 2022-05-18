@@ -11,6 +11,7 @@ from pyrogram import Client, errors
 from telegram import bot_api_version
 from telethon import TelegramClient
 from dotenv import load_dotenv
+from telethon.sessions import MemorySession
 from Python_ARQ import ARQ
 
 load_dotenv()
