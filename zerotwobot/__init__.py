@@ -7,6 +7,7 @@ import spamwatch
 
 import telegram.ext as tg
 from telegram import __version__ as ptb_version
+from pyrogram import Client, errors
 from telegram import bot_api_version
 from telethon import TelegramClient
 from dotenv import load_dotenv
