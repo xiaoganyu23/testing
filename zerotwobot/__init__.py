@@ -190,6 +190,13 @@ else:
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 
+client = TelegramClient(MemorySession(), API_ID, API_HASH)
+updater = tg.Updater(
+    TOKEN,
+    workers=min(32, os.cpu_count() + 4),
+    request_kwargs={"read_timeout": 10, "connect_timeout": 10},
+)
+
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("SpamWatch API key missing! recheck your config.")
