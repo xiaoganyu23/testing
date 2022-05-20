@@ -18,4 +18,4 @@ async def awake(event):
   TEXT += "❍ **Currently this bot has 100+ Pokemon Best nature added.** \n\n"
   TEXT += "❍ **In future we will soon add about safari, about nature, about elements** \n\n"
   TEXT += "**Thanks For Using me**"
-  await tbot.send_file(event.chat_id, caption=TEXT)
+  await tbot.send_message(event.chat_id, caption=TEXT)
