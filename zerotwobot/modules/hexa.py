@@ -16,6 +16,7 @@ async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Officer Jenny.** \n\n"
   TEXT += "❍ **This is HeXa Command** \n\n"
   TEXT += "❍ **List Of Pokemon : [HERE](https://telegra.ph/Pokemon-05-21-2)** \n\n"
+  TEXT += "❍ **Use /<pokemon name> To display its best nature \n\n"
   TEXT += "❍ **Use /natures To list natures command \n\n"
   TEXT += "❍ **Use /types To list types command \n\n"
   TEXT += "❍ *Soon .... We will add Rest 700+ Pokemon* \n\n"
