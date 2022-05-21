@@ -95,8 +95,9 @@ buttons = [
 
 HELP_STRINGS = """
 Hey there!.
-My Name is {}. Take me as your group's  to have fun with me. \
-I can help you with the following commands.
+My Name is {}. 
+ᴛᴀᴋᴇ ᴍᴇ ᴀꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ'ꜱ  ᴛᴏ ʜᴀᴠᴇ ꜰᴜɴ ᴡɪᴛʜ ᴍᴇ. \
+ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ᴄᴏᴍᴍᴀɴᴅꜱ.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -222,13 +223,13 @@ def start(update: Update, context: CallbackContext):
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
                Hey There {first_name}. \
-                \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
+                \nɪ'ᴍ {context.bot.first_name}, ᴍᴀᴅᴇ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ʜᴀᴠᴇ ᴍᴏʀᴇ ꜰᴜɴ ᴛʜᴀɴ ᴇᴠᴇʀ. \
                 \n────────────────── \
-                \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *I WILL DO MY BEST.* \
-                \n× *Hit /help to see my available commands.* \
+                \n× *ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ* \
+                \n× *ɪ ᴡɪʟʟ ᴅᴏ ᴍʏ ʙᴇꜱᴛ* \
+                \n× *ʜɪᴛ /help ᴛᴏ ꜱᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ.* \
                 \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: SILVER_KING!*
+                \n× *ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @ꜱɪʟᴠᴇʀ_ᴋɪɴɢ!*
                 ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
