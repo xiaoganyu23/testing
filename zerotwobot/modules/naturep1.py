@@ -928,6 +928,18 @@ def voltorb(update: Update, context: CallbackContext):
     )
     reply_text(r"Best- Timid, hasty, naive")
     
+def fp(update: Update, context: CallbackContext):
+    msg = update.effective_message
+    reply_text = (
+        msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
+    )
+    reply_text(r"God of Gay")
+    reply_text(r"Legendary gay")
+    reply_text(r"Gay of all time")
+    reply_text(r"Gay af")
+    reply_text(r"Woh to gay h")
+    reply_text(r"huh bahut bol liya ... dil par mat lena")
+    
 MEWTWO_HANDLER = DisableAbleCommandHandler("mewtwo", mewtwo, run_async=True)
 MEW_HANDLER = DisableAbleCommandHandler("mew", mew, run_async=True)
 TYRANITAR_HANDLER = DisableAbleCommandHandler("tyranitar", tyranitar, run_async=True)
@@ -1058,6 +1070,7 @@ HYPNO_HANDLER = DisableAbleCommandHandler("hypno", hypno, run_async=True)
 KRABBY_HANDLER = DisableAbleCommandHandler("krabby", krabby, run_async=True)
 KINGLER_HANDLER = DisableAbleCommandHandler("kingler", kingler, run_async=True)
 VOLTORB_HANDLER = DisableAbleCommandHandler("voltorb", voltorb, run_async=True)
+FP_HANDLER = DisableAbleCommandHandler("fp", fp, run_async=True)
 
 dispatcher.add_handler(MEWTWO_HANDLER)
 dispatcher.add_handler(MEW_HANDLER)
@@ -1189,3 +1202,4 @@ dispatcher.add_handler(HYPNO_HANDLER)
 dispatcher.add_handler(KRABBY_HANDLER)
 dispatcher.add_handler(KINGLER_HANDLER)
 dispatcher.add_handler(VOLTORB_HANDLER)
+dispatcher.add_handler(FP_HANDLER)
