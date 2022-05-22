@@ -84,7 +84,7 @@ buttons = [
             "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
             "https://t.me/BOTPEROSUPPORT"),
         InlineKeyboardButton(
-            "OWNER",
+            "𝙾𝚆𝙽𝙴𝚁",
             "https://t.me/SILVER_KING"),
 
         
