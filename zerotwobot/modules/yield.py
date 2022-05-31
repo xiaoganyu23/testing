@@ -57,10 +57,10 @@ def speed(update: Update, context: CallbackContext):
     )
 
 ATTACK_HANDLER = DisableAbleCommandHandler("attack", attack, run_async=True)
-DEFENCE_HANDLER = DisableAbleCommandHandler("defence", attack, run_async=True)
-SPA_HANDLER = DisableAbleCommandHandler("spa", attack, run_async=True)
-SPD_HANDLER = DisableAbleCommandHandler("spd", attack, run_async=True)
-SPEED_HANDLER = DisableAbleCommandHandler("speed", attack, run_async=True)
+DEFENCE_HANDLER = DisableAbleCommandHandler("defence", defence, run_async=True)
+SPA_HANDLER = DisableAbleCommandHandler("spa", spa, run_async=True)
+SPD_HANDLER = DisableAbleCommandHandler("spd", spd, run_async=True)
+SPEED_HANDLER = DisableAbleCommandHandler("speed", speed, run_async=True)
 
 dispatcher.add_handler(ATTACK_HANDLER)
 dispatcher.add_handler(DEFENCE_HANDLER)
