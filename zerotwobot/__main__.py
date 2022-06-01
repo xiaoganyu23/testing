@@ -82,10 +82,10 @@ buttons = [
     [
         InlineKeyboardButton(
             "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
-            "https://t.me/naruto_robot_support"),
+            "https://t.me/genshinvoid"),
         InlineKeyboardButton(
             "𝙽𝙴𝚃𝚆𝙾𝚁𝙺 📡",
-            "https://t.me/ignite_Xnetwork"),
+            "https://t.me/VoidxNetwork"),
 
         
     ]
@@ -95,7 +95,7 @@ buttons = [
 
 HELP_STRINGS = """
 Hey there!.
-My Name is {}, from Naruto. Take me as your group's  to have fun with me. \
+My Name is {}. Take me as your group's  to have fun with me. \
 I can help you with the following commands.
 
 *Main* commands available:
@@ -113,12 +113,12 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/cce63b5667d1028cd4fd9.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/2b297bc82227b7c358452.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @X_Alonez \
+ You can support the project by contacting @silver_king \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @PaimonXSupport."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at @voidxnetwork"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -224,11 +224,11 @@ def start(update: Update, context: CallbackContext):
                Hey There {first_name}. \
                 \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
                 \n────────────────── \
-                \n× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *Naruto's wish is for your wish to come true.* \
+                \n× *I'ᴍ Gᴀᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
+                \n× *Xiao's wish is for your wish to come true.* \
                 \n× *Hit /help to see my available commands.* \
                 \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: 亗𝙸𝙶𝙽𝙸𝚃𝙴!*
+                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: VOID!*
                 ──────────────────"""),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="【Support】",
-                            url="https://t.me/naruto_robot_support",
+                            url="https://t.me/genshinvoid",
                         ),
 
                     ],
@@ -575,7 +575,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
         )
 
-        if OWNER_ID != 1638803785 and DONATION_LINK:
+        if OWNER_ID != 1719179612 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -623,7 +623,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@naruto_robot_support", "👋 Yo, i'm alive.")
+            dispatcher.bot.sendMessage(f"@genshinvoid", "𝙸 𝙰𝙼 𝚁𝙴𝙰𝙳𝚈 𝚃𝙾 𝙲𝙾𝙽𝚀𝚄𝙴𝚁 𝙳𝙴𝙼𝙾𝙽𝚂")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isn't able to send message to support_chat, go and check!",
