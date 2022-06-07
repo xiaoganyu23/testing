@@ -1,0 +1,1000 @@
+{
+    "bulbasaur": {
+        "bulbasaur": {
+            "name": "Bulbasaur",
+            "gen": "1",
+            "artwork": "https://img.pokemondb.net/artwork/large/bulbasaur.jpg",
+            "national": "001",
+            "type": {
+                "type1": "Grass",
+                "type2": "Poison"
+            },
+            "species": "Seed Pok\u00e9mon",
+            "height": {
+                "si": "0.7\u00a0m",
+                "usc": "2\u203204\u2033"
+            },
+            "weight": {
+                "si": "6.9\u00a0kg",
+                "usc": "15.2\u00a0lbs"
+            },
+            "abilities": {
+                "ability1": "Overgrow",
+                "hidden_ability": "Chlorophyll"
+            },
+            "local": {
+                "rby": "001",
+                "gsc": "226",
+                "frlg": "001",
+                "hgss": "231",
+                "xy": "080",
+                "lgpe": "001"
+            },
+            "ev_yield": {
+                "atk": "1"
+            },
+            "catch_rate": {
+                "value": "45",
+                "percent": "5.9%"
+            },
+            "base_friendship": {
+                "value": "70",
+                "rating": "normal"
+            },
+            "base_exp": "64",
+            "growth_rate": "Medium Slow",
+            "egg_groups": [
+                "Grass",
+                "Monster"
+            ],
+            "gender": {
+                "male": "87.5%",
+                "female": "12.5%",
+                "genderless": false
+            },
+            "egg_cycles": "20",
+            "hatch_times": "4,884\u20135,140 steps",
+            "base_stats": {
+                "hp": "45",
+                "atk": "49",
+                "def": "49",
+                "spa": "65",
+                "spd": "65",
+                "spe": "45",
+                "total": "318"
+            },
+            "min_stats": {
+                "hp": "200",
+                "atk": "92",
+                "def": "92",
+                "spa": "121",
+                "spd": "121",
+                "spe": "85"
+            },
+            "max_stats": {
+                "hp": "294",
+                "atk": "216",
+                "def": "216",
+                "spa": "251",
+                "spd": "251",
+                "spe": "207"
+            },
+            "evolutions": {
+                "from": {
+                    "name": null,
+                    "method": null
+                },
+                "into": {
+                    "name": "Ivysaur",
+                    "method": "Level 16"
+                }
+            },
+            "changes": [
+                "In Generation 1, Bulbasaur has a base Special stat of 65."
+            ],
+            "dex_entries": {
+                "red": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POK\u00e9MON.",
+                "blue": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POK\u00e9MON.",
+                "yellow": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy.",
+                "gold": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.",
+                "silver": "It carries a seed on its back right from birth. As it grows older, the seed also grows larger.",
+                "crystal": "While it is young, it uses the nutrients that are stored in the seeds on its back in order to grow.",
+                "ruby": "BULBASAUR can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\u2019s rays, the seed grows progressively larger.",
+                "sapphire": "BULBASAUR can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\u2019s rays, the seed grows progressively larger.",
+                "emerald": "BULBASAUR can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\u2019s rays, the seed grows progressively larger.",
+                "firered": "There is a plant seed on its back right from the day this POK\u00e9MON is born. The seed slowly grows larger.",
+                "leafgreen": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POK\u00e9MON.",
+                "diamond": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "pearl": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "platinum": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "heartgold": "The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.",
+                "soulsilver": "It carries a seed on its back right from birth. As it grows older, the seed also grows larger.",
+                "black": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "white": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "black2": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "white2": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "x": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+                "y": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+                "omegaruby": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\u2019s rays, the seed grows progressively larger.",
+                "alphasapphire": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun\u2019s rays, the seed grows progressively larger.",
+                "letsgopikachu": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy.",
+                "letsgoeevee": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy.",
+                "sword": "There is a plant seed on its back right from the day this Pok\u00e9mon is born. The seed slowly grows larger.",
+                "shield": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow."
+            },
+            "location": {
+                "red": "Pallet Town",
+                "blue": "Pallet Town",
+                "yellow": "Cerulean City",
+                "gold": "Trade/migrate from another game",
+                "silver": "Trade/migrate from another game",
+                "crystal": "Trade/migrate from another game",
+                "ruby": "Trade/migrate from another game",
+                "sapphire": "Trade/migrate from another game",
+                "firered": "Pallet Town",
+                "leafgreen": "Pallet Town",
+                "emerald": "Trade/migrate from another game",
+                "diamond": "Trade/migrate from another game",
+                "pearl": "Trade/migrate from another game",
+                "platinum": "Trade/migrate from another game",
+                "heartgold": "Pallet Town",
+                "soulsilver": "Pallet Town",
+                "black": "Trade/migrate from another game",
+                "white": "Trade/migrate from another game",
+                "black2": "Trade/migrate from another game",
+                "white2": "Trade/migrate from another game",
+                "x": "Lumiose City",
+                "y": "Lumiose City",
+                "omegaruby": "Trade/migrate from another game",
+                "alphasapphire": "Trade/migrate from another game",
+                "sun": "Trade/migrate from another game",
+                "moon": "Trade/migrate from another game",
+                "ultrasun": "Route 2",
+                "ultramoon": "Route 2",
+                "letsgopikachu": "Cerulean City, Viridian Forest",
+                "letsgoeevee": "Cerulean City, Viridian Forest",
+                "sword": "Trade/migrate from another game",
+                "shield": "Trade/migrate from another game"
+            },
+            "other_lang": {
+                "english": "Bulbasaur",
+                "japanese": "\u30d5\u30b7\u30ae\u30c0\u30cd (Fushigidane)",
+                "german": "Bisasam",
+                "french": "Bulbizarre"
+            },
+            "name_origin": {
+                "bulb": "a type of plant",
+                "-saur": "Greek suffix meaning \u2018lizard\u2019"
+            },
+            "moveset": {
+                "growl": {
+                    "id": "45",
+                    "name": "Growl",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "40",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Level 1"
+                },
+                "tackle": {
+                    "id": "33",
+                    "name": "Tackle",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "35",
+                    "bp": "40",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Level 1"
+                },
+                "vine_whip": {
+                    "id": "22",
+                    "name": "Vine Whip",
+                    "type": "Grass",
+                    "cat": "Physical",
+                    "condition": "Cool",
+                    "pp": "25",
+                    "bp": "45",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Level 3"
+                },
+                "growth": {
+                    "id": "74",
+                    "name": "Growth",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "Level 6"
+                },
+                "leech_seed": {
+                    "id": "73",
+                    "name": "Leech Seed",
+                    "type": "Grass",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "90%",
+                    "gen": "1",
+                    "method": "Level 9"
+                },
+                "razor_leaf": {
+                    "id": "75",
+                    "name": "Razor Leaf",
+                    "type": "Grass",
+                    "cat": "Physical",
+                    "condition": "Cool",
+                    "pp": "25",
+                    "bp": "55",
+                    "acc": "95%",
+                    "gen": "1",
+                    "method": "Level 12"
+                },
+                "poison_powder": {
+                    "id": "77",
+                    "name": "Poison Powder",
+                    "type": "Poison",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "35",
+                    "bp": "\u2014",
+                    "acc": "75%",
+                    "gen": "1",
+                    "method": "Level 15"
+                },
+                "sleep_powder": {
+                    "id": "79",
+                    "name": "Sleep Powder",
+                    "type": "Grass",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "15",
+                    "bp": "\u2014",
+                    "acc": "75%",
+                    "gen": "1",
+                    "method": "Level 15"
+                },
+                "seed_bomb": {
+                    "id": "402",
+                    "name": "Seed Bomb",
+                    "type": "Grass",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "15",
+                    "bp": "80",
+                    "acc": "100%",
+                    "gen": "4",
+                    "method": [
+                        "Level 18",
+                        "TR59"
+                    ]
+                },
+                "take_down": {
+                    "id": "36",
+                    "name": "Take Down",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "20",
+                    "bp": "90",
+                    "acc": "85%",
+                    "gen": "1",
+                    "method": "Level 21"
+                },
+                "sweet_scent": {
+                    "id": "230",
+                    "name": "Sweet Scent",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "Level 24"
+                },
+                "synthesis": {
+                    "id": "235",
+                    "name": "Synthesis",
+                    "type": "Grass",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "5",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "Level 27"
+                },
+                "worry_seed": {
+                    "id": "388",
+                    "name": "Worry Seed",
+                    "type": "Grass",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "4",
+                    "method": "Level 30"
+                },
+                "double-edge": {
+                    "id": "38",
+                    "name": "Double-Edge",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "15",
+                    "bp": "120",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Level 33"
+                },
+                "solar_beam": {
+                    "id": "76",
+                    "name": "Solar Beam",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Cool",
+                    "pp": "10",
+                    "bp": "120",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": [
+                        "Level 36",
+                        "TM11"
+                    ]
+                },
+                "curse": {
+                    "id": "174",
+                    "name": "Curse",
+                    "type": "Ghost",
+                    "cat": "Status",
+                    "condition": "Tough",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "Egg move"
+                },
+                "ingrain": {
+                    "id": "275",
+                    "name": "Ingrain",
+                    "type": "Grass",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "3",
+                    "method": "Egg move"
+                },
+                "nature_power": {
+                    "id": "267",
+                    "name": "Nature Power",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "3",
+                    "method": "Egg move"
+                },
+                "petal_dance": {
+                    "id": "80",
+                    "name": "Petal Dance",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "10",
+                    "bp": "120",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Egg move"
+                },
+                "skull_bash": {
+                    "id": "130",
+                    "name": "Skull Bash",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "10",
+                    "bp": "130",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Egg move"
+                },
+                "toxic": {
+                    "id": "92",
+                    "name": "Toxic",
+                    "type": "Poison",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "90%",
+                    "gen": "1",
+                    "method": "Egg move"
+                },
+                "magical_leaf": {
+                    "id": "345",
+                    "name": "Magical Leaf",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "20",
+                    "bp": "60",
+                    "acc": "\u2014",
+                    "gen": "3",
+                    "method": "TM10"
+                },
+                "light_screen": {
+                    "id": "113",
+                    "name": "Light Screen",
+                    "type": "Psychic",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "30",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "TM17"
+                },
+                "safeguard": {
+                    "id": "219",
+                    "name": "Safeguard",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "25",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "TM19"
+                },
+                "rest": {
+                    "id": "156",
+                    "name": "Rest",
+                    "type": "Psychic",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "TM21"
+                },
+                "snore": {
+                    "id": "173",
+                    "name": "Snore",
+                    "type": "Normal",
+                    "cat": "Special",
+                    "condition": "Cute",
+                    "pp": "15",
+                    "bp": "50",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "TM24"
+                },
+                "protect": {
+                    "id": "182",
+                    "name": "Protect",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "TM25"
+                },
+                "giga_drain": {
+                    "id": "202",
+                    "name": "Giga Drain",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Clever",
+                    "pp": "10",
+                    "bp": "75",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "TM28"
+                },
+                "charm": {
+                    "id": "204",
+                    "name": "Charm",
+                    "type": "Fairy",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "TM29"
+                },
+                "attract": {
+                    "id": "213",
+                    "name": "Attract",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "15",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "TM31"
+                },
+                "sunny_day": {
+                    "id": "241",
+                    "name": "Sunny Day",
+                    "type": "Fire",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "5",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "TM34"
+                },
+                "facade": {
+                    "id": "263",
+                    "name": "Facade",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Cute",
+                    "pp": "20",
+                    "bp": "70",
+                    "acc": "100%",
+                    "gen": "3",
+                    "method": "TM39"
+                },
+                "helping_hand": {
+                    "id": "270",
+                    "name": "Helping Hand",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Clever",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "3",
+                    "method": "TM41"
+                },
+                "weather_ball": {
+                    "id": "311",
+                    "name": "Weather Ball",
+                    "type": "Normal",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "10",
+                    "bp": "50",
+                    "acc": "100%",
+                    "gen": "3",
+                    "method": "TM46"
+                },
+                "bullet_seed": {
+                    "id": "331",
+                    "name": "Bullet Seed",
+                    "type": "Grass",
+                    "cat": "Physical",
+                    "condition": "Cool",
+                    "pp": "30",
+                    "bp": "25",
+                    "acc": "100%",
+                    "gen": "3",
+                    "method": "TM50"
+                },
+                "venoshock": {
+                    "id": "474",
+                    "name": "Venoshock",
+                    "type": "Poison",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "10",
+                    "bp": "65",
+                    "acc": "100%",
+                    "gen": "5",
+                    "method": "TM74"
+                },
+                "round": {
+                    "id": "496",
+                    "name": "Round",
+                    "type": "Normal",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "15",
+                    "bp": "60",
+                    "acc": "100%",
+                    "gen": "5",
+                    "method": "TM76"
+                },
+                "grassy_terrain": {
+                    "id": "580",
+                    "name": "Grassy Terrain",
+                    "type": "Grass",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "6",
+                    "method": "TM88"
+                },
+                "false_swipe": {
+                    "id": "206",
+                    "name": "False Swipe",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Cool",
+                    "pp": "40",
+                    "bp": "40",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "TM94"
+                },
+                "swords_dance": {
+                    "id": "14",
+                    "name": "Swords Dance",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "TR00"
+                },
+                "body_slam": {
+                    "id": "34",
+                    "name": "Body Slam",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "15",
+                    "bp": "85",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "TR01"
+                },
+                "amnesia": {
+                    "id": "133",
+                    "name": "Amnesia",
+                    "type": "Psychic",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "TR17"
+                },
+                "substitute": {
+                    "id": "164",
+                    "name": "Substitute",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "TR20"
+                },
+                "sludge_bomb": {
+                    "id": "188",
+                    "name": "Sludge Bomb",
+                    "type": "Poison",
+                    "cat": "Special",
+                    "condition": "Tough",
+                    "pp": "10",
+                    "bp": "90",
+                    "acc": "100%",
+                    "gen": "2",
+                    "method": "TR22"
+                },
+                "endure": {
+                    "id": "203",
+                    "name": "Endure",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Tough",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "TR26"
+                },
+                "sleep_talk": {
+                    "id": "214",
+                    "name": "Sleep Talk",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "10",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "2",
+                    "method": "TR27"
+                },
+                "energy_ball": {
+                    "id": "412",
+                    "name": "Energy Ball",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "10",
+                    "bp": "90",
+                    "acc": "100%",
+                    "gen": "4",
+                    "method": "TR65"
+                },
+                "leaf_storm": {
+                    "id": "437",
+                    "name": "Leaf Storm",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Beautiful",
+                    "pp": "5",
+                    "bp": "130",
+                    "acc": "90%",
+                    "gen": "4",
+                    "method": "TR71"
+                },
+                "power_whip": {
+                    "id": "438",
+                    "name": "Power Whip",
+                    "type": "Grass",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "10",
+                    "bp": "120",
+                    "acc": "85%",
+                    "gen": "4",
+                    "method": "TR72"
+                },
+                "grass_knot": {
+                    "id": "447",
+                    "name": "Grass Knot",
+                    "type": "Grass",
+                    "cat": "Special",
+                    "condition": "Cute",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "4",
+                    "method": "TR77"
+                },
+                "work_up": {
+                    "id": "526",
+                    "name": "Work Up",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Tough",
+                    "pp": "30",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "5",
+                    "method": "TR85"
+                }
+            }
+        }
+    },
+    "ivysaur": {
+        "ivysaur": {
+            "name": "Ivysaur",
+            "gen": "1",
+            "artwork": "https://img.pokemondb.net/artwork/large/ivysaur.jpg",
+            "national": "002",
+            "type": {
+                "type1": "Grass",
+                "type2": "Poison"
+            },
+            "species": "Seed Pok\u00e9mon",
+            "height": {
+                "si": "1.0\u00a0m",
+                "usc": "3\u203203\u2033"
+            },
+            "weight": {
+                "si": "13.0\u00a0kg",
+                "usc": "28.7\u00a0lbs"
+            },
+            "abilities": {
+                "ability1": "Overgrow",
+                "hidden_ability": "Chlorophyll"
+            },
+            "local": {
+                "rby": "002",
+                "gsc": "227",
+                "frlg": "002",
+                "hgss": "232",
+                "xy": "081",
+                "lgpe": "002"
+            },
+            "ev_yield": {
+                "atk": "1",
+                "def": "1"
+            },
+            "catch_rate": {
+                "value": "45",
+                "percent": "5.9%"
+            },
+            "base_friendship": {
+                "value": "70",
+                "rating": "normal"
+            },
+            "base_exp": "142",
+            "growth_rate": "Medium Slow",
+            "egg_groups": [
+                "Grass",
+                "Monster"
+            ],
+            "gender": {
+                "male": "87.5%",
+                "female": "12.5%",
+                "genderless": false
+            },
+            "egg_cycles": "20",
+            "hatch_times": "4,884\u20135,140 steps",
+            "base_stats": {
+                "hp": "60",
+                "atk": "62",
+                "def": "63",
+                "spa": "80",
+                "spd": "80",
+                "spe": "60",
+                "total": "405"
+            },
+            "min_stats": {
+                "hp": "230",
+                "atk": "116",
+                "def": "117",
+                "spa": "148",
+                "spd": "148",
+                "spe": "112"
+            },
+            "max_stats": {
+                "hp": "324",
+                "atk": "245",
+                "def": "247",
+                "spa": "284",
+                "spd": "284",
+                "spe": "240"
+            },
+            "evolutions": {
+                "from": {
+                    "name": "Bulbasaur",
+                    "method": "Level 16"
+                },
+                "into": {
+                    "name": "Venusaur",
+                    "method": "Level 32"
+                }
+            },
+            "changes": [
+                "In Generation 1, Ivysaur has a base Special stat of 80.",
+                "In Generations 1-4, Ivysaur has a base experience yield of 141."
+            ],
+            "dex_entries": {
+                "red": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+                "blue": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+                "yellow": "The bulb on its back grows by drawing energy. It gives off an aroma when it is ready to bloom.",
+                "gold": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger.",
+                "silver": "If the bud on its back starts to smell sweet, it is evidence that the large flower will soon bloom.",
+                "crystal": "The bulb on its back grows as it absorbs nutrients. The bulb gives off a pleasant aroma when it blooms.",
+                "ruby": "There is a bud on this POK\u00e9MON\u2019s back. To support its weight, IVYSAUR\u2019s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it\u2019s a sign that the bud will bloom into a large flower soon.",
+                "sapphire": "There is a bud on this POK\u00e9MON\u2019s back. To support its weight, IVYSAUR\u2019s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it\u2019s a sign that the bud will bloom into a large flower soon.",
+                "firered": "There is a plant bulb on its back. When it absorbs nutrients, the bulb is said to blossom into a large flower.",
+                "leafgreen": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+                "emerald": "To support its bulb, IVYSAUR\u2019s legs grow sturdy. If it spends more time lying in the sunlight, the bud will soon bloom into a large flower.",
+                "diamond": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "pearl": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "platinum": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "heartgold": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger.",
+                "soulsilver": "If the bud on its back starts to smell sweet, it is evidence that the large flower will soon bloom.",
+                "black": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "white": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "black2": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "white2": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "x": "There is a plant bulb on its back. When it absorbs nutrients, the bulb is said to blossom into a large flower.",
+                "y": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower\u2019s coming bloom.",
+                "omegaruby": "There is a bud on this Pok\u00e9mon\u2019s back. To support its weight, Ivysaur\u2019s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it\u2019s a sign that the bud will bloom into a large flower soon.",
+                "alphasapphire": "There is a bud on this Pok\u00e9mon\u2019s back. To support its weight, Ivysaur\u2019s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it\u2019s a sign that the bud will bloom into a large flower soon.",
+                "letsgopikachu": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom.",
+                "letsgoeevee": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom.",
+                "sword": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+                "shield": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
+            },
+            "location": {
+                "red": "Evolve Bulbasaur",
+                "blue": "Evolve Bulbasaur",
+                "yellow": "Evolve Bulbasaur",
+                "gold": "Trade/migrate from another game",
+                "silver": "Trade/migrate from another game",
+                "crystal": "Trade/migrate from another game",
+                "ruby": "Trade/migrate from another game",
+                "sapphire": "Trade/migrate from another game",
+                "firered": "Evolve Bulbasaur",
+                "leafgreen": "Evolve Bulbasaur",
+                "emerald": "Trade/migrate from another game",
+                "diamond": "Trade/migrate from another game",
+                "pearl": "Trade/migrate from another game",
+                "platinum": "Trade/migrate from another game",
+                "heartgold": "Evolve Bulbasaur",
+                "soulsilver": "Evolve Bulbasaur",
+                "black": "Trade/migrate from another game",
+                "white": "Trade/migrate from another game",
+                "black2": "Trade/migrate from another game",
+                "white2": "Trade/migrate from another game",
+                "x": "Evolve Bulbasaur",
+                "y": "Evolve Bulbasaur",
+                "omegaruby": "Trade/migrate from another game",
+                "alphasapphire": "Trade/migrate from another game",
+                "sun": "Trade/migrate from another game",
+                "moon": "Trade/migrate from another game",
+                "ultrasun": "Evolve Bulbasaur",
+                "ultramoon": "Evolve Bulbasaur",
+                "letsgopikachu": "Evolve Bulbasaur",
+                "letsgoeevee": "Evolve Bulbasaur",
+                "sword": "Trade/migrate from another game",
+                "shield": "Trade/migrate from another game"
+            },
+            "other_lang": {
+                "english": "Ivysaur",
+                "japanese": "\u30d5\u30b7\u30ae\u30bd\u30a6 (Fushigisou)",
+                "german": "Bisaknosp",
+                "french": "Herbizarre"
+            },
+            "name_origin": {
+                "ivy": "a plant",
+                "-saur": "Greek suffix meaning \u2018lizard\u2019"
+            },
+            "moveset": {
+                "growl": {
+                    "id": "45",
+                    "name": "Growl",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Cute",
+                    "pp": "40",
+                    "bp": "\u2014",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Level 1"
+                },
+                "growth": {
+                    "id": "74",
+                    "name": "Growth",
+                    "type": "Normal",
+                    "cat": "Status",
+                    "condition": "Beautiful",
+                    "pp": "20",
+                    "bp": "\u2014",
+                    "acc": "\u2014",
+                    "gen": "1",
+                    "method": "Level 1"
+                },
+                "tackle": {
+                    "id": "33",
+                    "name": "Tackle",
+                    "type": "Normal",
+                    "cat": "Physical",
+                    "condition": "Tough",
+                    "pp": "35",
+                    "bp": "40",
+                    "acc": "100%",
+                    "gen": "1",
+                    "method": "Level 1"
+                },
+                "vine_whip": {
+                    "id": "22",
+                    "name": "Vine Whip",
+                    "type": "Grass",
